@@ -11,5 +11,4 @@ scraper('http://pokemondb.net/pokedex/all', '#pokedex tbody tr', [{
   'sp_atk': 'td:nth-child(8)',
   'sp_def': 'td:nth-child(9)',
   'speed': 'td:nth-child(10)',
-}])
-.stream();
+}]).write('pokemon.json');
